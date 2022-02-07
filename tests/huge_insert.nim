@@ -14,10 +14,10 @@ try:
     if i == 12:
       isOk vdb.vedis_kv_store("sentinel", 8, "I'm", 3)
 
-    transaction vdb:
-      discard
-
   echo "Done...Fetching the 'sentinel' record: "
+
+  # TODO: ...
+
   var
     ln = 40
     buff = newStringOfCap(40)
